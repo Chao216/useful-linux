@@ -76,7 +76,7 @@ setting up user account for samba
 sudo smbpasswd -a username
 ```
 
-Note! the user should exist on the machine you set up the samba server.
+***Note! the user should exist on the machine you set up the samba server.***
 
 ### 2.2 samba client
 
