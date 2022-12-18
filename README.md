@@ -122,3 +122,26 @@ put file_name
 
 to exit smbclient on terminal, type `exit`
 
+## execute or source a file
+
+execute a file will run the file in a new shell process, to execute a file
+```shell
+
+./file_name
+
+# or
+
+file_name
+
+```
+source a file will run the file in current shell process, to source a file
+
+```shell
+source file_name
+
+# or 
+
+. file_name
+```
+
+***Note ! dot is an alias to source in UNIX***
