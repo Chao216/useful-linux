@@ -97,5 +97,11 @@ on windows, open file explorer, and on address bar
 
 ### 2.2.1 smbclient
 
-you can 
+you can use samba on terminal with `smbclient`
+
+simply `sudo apt install smbclient`
+
+to connect samba server on terminal 
+```shell
+smbclient 
 
