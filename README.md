@@ -22,3 +22,27 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted 
 ```
 
 after adding the new sources, run `sudo apt update`. and `sudo apt full-upgrade` as optional action.
+
+---
+
+## 2. samba
+
+samba is useful to transfer files between linux and windows machines.
+
+### 2.1 set samba server
+
+first install samba on your machine
+```shell
+sudo apt update
+sudo apt install samba
+```
+
+then you need to set up samba<br/>
+
+make a directory for samba to share with`mkdir /home/<username>/sambashare/`
+
+back up your `/etc/samba/smb.conf` and edit it
+```shell
+sudo vim /etc/samba/smb.conf
+```
+
