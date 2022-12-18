@@ -119,3 +119,6 @@ put file_name
 
 ***Note! you local working directory is the directory where you run smbclient program, and remote current directory can be shown as pwd.*** 
 
+
+to exit smbclient on terminal, type `exit`
+
