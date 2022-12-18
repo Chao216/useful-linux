@@ -66,3 +66,36 @@ sudo systemctl restart smbd
 sudo systemctl status smbd
 ```
 
+allow samba traffic on firewall
+```shell
+sudo ufw allow samba
+```
+
+setting up user account for samba
+```shell
+sudo smbpasswd -a username
+```
+
+Note! the user should exist on the machine you set up the samba server.
+
+### 2.2 samba client
+
+connect on linux gui
+
+on file explorer, use connect to server
+
+``` 
+smb://ip_address/sambashare
+```
+
+on windows, open file explorer, and on address bar
+```
+\\ip_address\sambashare
+```
+
+***Note! the path for client is ip_address/sambashare, which was in square bracket in smb.conf file, keep it same as [sambashare] you configured on the server***
+
+### 2.2.1 smbclient
+
+you can 
+
