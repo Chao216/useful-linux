@@ -103,5 +103,19 @@ simply `sudo apt install smbclient`
 
 to connect samba server on terminal 
 ```shell
-smbclient 
+smbclient //ip_address/sambashare -U username
+```
+
+enter password for user, and you are good to go.<br/>
+you can use ls, cd, pwd, and so on in smbclient.<br/>
+to fetch a remote file to local machine
+```shell
+get file_name
+```
+to upload a file from local machine to server
+```shell
+put file_name
+```
+
+***Note! you local working directory is the directory where you run smbclient program, and remote current directory can be shown as pwd. *** 
 
