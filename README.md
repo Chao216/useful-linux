@@ -122,7 +122,7 @@ put file_name
 
 to exit smbclient on terminal, type `exit`
 
-## execute or source a file
+## 3. execute or source a file
 
 execute a file will run the file in a new shell process, to execute a file
 ```shell
