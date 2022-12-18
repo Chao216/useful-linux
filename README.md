@@ -46,3 +46,23 @@ back up your `/etc/samba/smb.conf` and edit it
 sudo vim /etc/samba/smb.conf
 ```
 
+adding the following lines
+```shell
+[sambashare]
+    comment = Samba on Ubuntu
+    path = /home/username/sambashare
+    read only = no
+    browsable = yes
+```
+
+the path is the absolute path (directory) you made for samba to share with<br/>
+
+now enable and run the service with systemctl
+```
+sudo systemctl enable smbd
+sudo systemctl restart smbd
+
+# check smbd service status
+sudo systemctl status smbd
+```
+
