@@ -117,5 +117,5 @@ to upload a file from local machine to server
 put file_name
 ```
 
-***Note! you local working directory is the directory where you run smbclient program, and remote current directory can be shown as pwd. *** 
+***Note! you local working directory is the directory where you run smbclient program, and remote current directory can be shown as pwd.*** 
 
