@@ -161,3 +161,17 @@ sed -e "s/old/new"; "s/today/tomorrow/" foo.txt
 ```
 
 add an `-e` option, ***Note ！ no space between end of command and `;`***
+
+### 3.3 save scripts in a sed file
+
+```shell
+cat script1.sed
+
+s/black/white/
+s/good/super/
+s/hi/hello/
+
+```
+
+you can call the sed file with `-f` option`sed -f script1.sed foo.txt`
+
