@@ -145,3 +145,11 @@ source file_name
 ```
 
 ***Note ! dot is an alias to source in UNIX***
+
+## 3. Sed (stream editor)
+
+### 3.1 simple subsitute
+```shell
+sed "s/old_text/newtext/" foo.txt
+```
+
