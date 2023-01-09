@@ -153,3 +153,11 @@ source file_name
 sed "s/old_text/newtext/" foo.txt
 ```
 
+### 3.2 sed with multiple commands
+
+```shell
+
+sed -e "s/old/new"; "s/today/tomorrow/" foo.txt
+```
+
+add an `-e` option, ***Note ！ no space between end of command and `;`***
